@@ -1,0 +1,85 @@
+@font-face 
+{
+    font-family:Inter;
+    src: url(https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap);
+}
+
+body
+{
+    background-color:rgba(235, 242, 242, 1);
+    font-family: Inter;
+}
+
+h1
+{
+    padding-top: 40px;
+    color:rgba(41, 50, 65, 1);
+    text-align: center;
+    font-size: 40px;
+}
+
+form
+{
+    margin:39px 128px;
+}
+
+form label
+{
+    font-size: 22px;
+}
+
+form label, form input, form select
+{
+    display: block;
+    padding: 5px;
+    color:rgba(41, 50, 65, 1);
+    background-color:rgba(235, 242, 242, 1)
+}
+
+form input, form select
+{
+    border: 1px solid rgba(41, 50, 65, 1);
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+form select
+{
+    border: 1px solid rgba(41, 50, 65, 1);
+    width: 361px;
+    height: 42px;
+    border-radius: 5px;
+}
+
+form button
+{
+    margin-top: 50px;
+    background-color:rgba(238, 108, 77, 1);
+    color:rgba(235, 242, 242, 1);
+    border: 0px;
+    font-size: 22px;
+    width: 200px;
+    height: 60px;
+    border-radius: 13px; 
+}
+
+.buttons
+{
+    display:flex;
+    justify-content: space-between;
+}
+
+::placeholder
+{
+    color:rgba(152, 193, 217, 1);
+    font-size: 16px;
+}
+
+form select, select option, form input
+{
+    font-size: 16px;
+    color: rgba(61, 90, 128, 1);
+}
+
+

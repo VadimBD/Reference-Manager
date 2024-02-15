@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ukr">
+<head>
+    <meta charset="UTF-8">
+    <title>Order form</title>
+    <link rel="stylesheet" type="text/css" href="OrderFormStyle.css"/>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+    </style>
+</head>
+
+<body>
+    <h1>Замовлення довідки</h1>
+
+    <form>
+        <label for="name">Ім’я</label>
+        <input type="text" name="name" placeholder="Введіть ваше ім’я">
+        <br>
+        <label for="surname">Прізвище</label>
+        <input type="text" name="surname" placeholder="Введіть ваше прізвище">
+        <br>
+        <label for="middle-name">По батькові</label>
+        <input type="text" name="middle-name" placeholder="Введіть ваше ім’я по батькові">
+        <br>
+        <label for="name">Електронна пошта</label>
+        <input type="email" name="email" placeholder="Введіть вашу електронну пошту">
+        <br>
+        <label for="group">Виберіть вашу групу</label> 
+        <select name="group"> 
+            <option value="none" selected>---</option>
+            <option value="pd21">ПД-21</option> 
+            <option value="pd22">ПД-22</option> 
+            <option value="pd23">ПД-23</option> 
+            <option value="pd24">ПД-24</option> 
+        </select>
+        <br>
+        <div class="buttons">
+            <button>Назад</button>
+            <button>Вперед</button>
+        </div>
+    </form>
+
+</body>
+</html>
