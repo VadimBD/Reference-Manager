@@ -10,7 +10,7 @@ body
     font-family: Inter;
 }
 
-h1
+#reference
 {
     padding-top: 40px;
     color:rgba(41, 50, 65, 1);
@@ -18,17 +18,21 @@ h1
     font-size: 40px;
 }
 
-form
+.order
 {
     margin:39px 128px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
-form label
+.order label
 {
     font-size: 22px;
 }
 
-form label, form input, form select
+.order label, .order input, .order select
 {
     display: block;
     padding: 5px;
@@ -36,7 +40,7 @@ form label, form input, form select
     background-color:rgba(235, 242, 242, 1)
 }
 
-form input, form select
+.order input, .order select
 {
     border: 1px solid rgba(41, 50, 65, 1);
     width: 350px;
@@ -44,7 +48,7 @@ form input, form select
     border-radius: 5px;
 }
 
-form select
+.order select
 {
     border: 1px solid rgba(41, 50, 65, 1);
     width: 361px;
@@ -52,7 +56,7 @@ form select
     border-radius: 5px;
 }
 
-form button
+.order button
 {
     margin-top: 50px;
     background-color:rgba(238, 108, 77, 1);
@@ -76,7 +80,7 @@ form button
     font-size: 16px;
 }
 
-form select, select option, form input
+.order-select, .order input
 {
     font-size: 16px;
     color: rgba(61, 90, 128, 1);

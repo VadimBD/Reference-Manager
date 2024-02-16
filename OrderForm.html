@@ -11,30 +11,39 @@
 </head>
 
 <body>
-    <h1>Замовлення довідки</h1>
+    <h1 id="reference">Замовлення довідки</h1>
 
-    <form>
-        <label for="name">Ім’я</label>
-        <input type="text" name="name" placeholder="Введіть ваше ім’я">
-        <br>
-        <label for="surname">Прізвище</label>
-        <input type="text" name="surname" placeholder="Введіть ваше прізвище">
-        <br>
-        <label for="middle-name">По батькові</label>
-        <input type="text" name="middle-name" placeholder="Введіть ваше ім’я по батькові">
-        <br>
-        <label for="name">Електронна пошта</label>
-        <input type="email" name="email" placeholder="Введіть вашу електронну пошту">
-        <br>
-        <label for="group">Виберіть вашу групу</label> 
-        <select name="group"> 
-            <option value="none" selected>---</option>
-            <option value="pd21">ПД-21</option> 
-            <option value="pd22">ПД-22</option> 
-            <option value="pd23">ПД-23</option> 
-            <option value="pd24">ПД-24</option> 
-        </select>
-        <br>
+    <form class="order">
+        <div>
+            <label for="name">Ім’я</label>
+            <input type="text" id="name" placeholder="Введіть ваше ім’я">
+        </div>
+        
+        <div>
+            <label for="surname">Прізвище</label>
+            <input type="text" id="surname" placeholder="Введіть ваше прізвище">
+        </div> 
+        
+        <div>
+            <label for="middle-name">По батькові</label>
+            <input type="text" id="middle-name" placeholder="Введіть ваше ім’я по батькові">
+        </div>
+        
+        <div>
+            <label for="name">Електронна пошта</label>
+            <input type="email" id="email" placeholder="Введіть вашу електронну пошту">
+        </div>
+        
+        <div>
+            <label for="group">Виберіть вашу групу</label> 
+            <select id="group", class="order-select"> 
+                <option value="none" selected>---</option>
+                <option value="pd21">ПД-21</option> 
+                <option value="pd22">ПД-22</option> 
+                <option value="pd23">ПД-23</option> 
+                <option value="pd24">ПД-24</option> 
+            </select>
+        </div>
         <div class="buttons">
             <button>Назад</button>
             <button>Вперед</button>
