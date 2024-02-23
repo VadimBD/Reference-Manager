@@ -1,0 +1,14 @@
+﻿<div  style="flex-direction:column; width:100%; ">
+    <h1 style="display:flex; text-align:center; justify-content:center">Вибір довідки</h1>
+    <div style="display:flex; flex-direction:column; justify-content:space-between ">
+        <h3>Оберіть будь-ласка необхідну довідку:</h3>
+
+      
+        <a asp-action="RequestReference" asp-route-id="@((int) ReferenceType.Academic)"><button class="Btn SelectBtn">Академічна довідка:</button></a>
+        <a asp-action="RequestReference" asp-route-id="@((int) ReferenceType.Admission)"> <button class="Btn SelectBtn"> Довідка про вступ:</button></a>
+        <a asp-action="RequestReference" asp-route-id="@((int) ReferenceType.Residence)"><button class="Btn SelectBtn">Довідка про перебування в університеті:</button></a>
+        <a asp-action="RequestReference" asp-route-id="@((int) ReferenceType.Issue)"><button class="Btn SelectBtn">Довідка про випуск з університету:</button></a>
+       
+
+    </div>
+</div>

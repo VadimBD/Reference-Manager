@@ -1,0 +1,21 @@
+﻿@model ReferenceRequestInfoVM
+<div>
+    <label asp-for="@Model.Info.FirstName" class="ReferenceFormLabel">Ім’я</label>
+    <input asp-for="@Model.Info.FirstName" class="ReferenceFormInput" placeholder="Введіть ваше ім’я"/>
+</div>
+
+<div>
+    <label asp-for="@Model.Info.LastName" class="ReferenceFormLabel">Прізвище</label>
+    <input asp-for="@Model.Info.LastName" class="ReferenceFormInput" placeholder="Введіть ваше прізвище"/>
+</div>
+
+<div>
+    <label asp-for="@Model.Info.MiddleName" class="ReferenceFormLabel">По батькові</label>
+    <input asp-for="@Model.Info.MiddleName" class="ReferenceFormInput" placeholder="Введіть ваше ім’я по батькові"/>
+</div>
+
+<div>
+    <label asp-for="@Model.Info.Email" class="ReferenceFormLabel">Електронна пошта</label>
+    <input asp-for="@Model.Info.Email" class="ReferenceFormInput" placeholder="Введіть вашу електронну пошту"/>
+</div>
+

@@ -1,0 +1,33 @@
+﻿@model ReferenceRequestInfo
+
+<div class="formContainer">
+<h1 class="ReviewHead">Підтвердження інформації</h1>
+    <div>
+        <div>
+            <p style="font-size:25px; margin-left:5px">Ваша інформація:</p>
+        </div>
+        
+        <div class="ReviewTextBlock">
+            <p>First Name:@Model.FirstName</p>
+            <p>Last Name: @Model.LastName</p>
+            <p>ЫMiddle Name:@Model.MiddleName</p>
+            <p>Email:@Model.Email</p>
+            @if(Model.Group!=null)
+            {
+                <p>группа :@Model.Group.Name</p>
+            }
+            @if (Model.CustomFields != null)
+            {
+                foreach (var cField in Model.CustomFields)
+                {
+                    <p>@cField.Type.ToString():@cField.Value </p>
+                }
+            }
+        </div>
+        
+             <div class="buttons" style="margin-left:5px;">
+            <a asp-action="RequestReference" asp-route-id="@((int) Model.Type)" class="Btn formBtn hrefBtn">Назад</a>
+            <a asp-action="Confirm"><button type="submit" class="Btn formBtn" style="height: 40px;">Далі</button></a>
+        </div>
+    </div> 
+</div>

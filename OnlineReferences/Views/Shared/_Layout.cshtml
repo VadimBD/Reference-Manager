@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+    <link rel="stylesheet" href="~/css/Style.css" />
+</head>
+<body>
+    <header class="Head">
+        <div>
+        <img class="Logo" src="~/images/Logo.png" alt="Logo">
+        </div>
+        <h4 class="HeaderText LogoText">Довідки ДУІКТ</h4>
+        <h5 class="HeaderText Languages ">UA | EN</h5>
+    </header>
+    <div style="display:flex">
+        @RenderBody()
+    </div>
+    <footer class="Footer">
+        <h5 class="InfoText">Контактна інформація:</h5>
+        <div class="Info">
+            <div class="Phones">
+                <p id="Phone1">+380974267946</p>
+                <p id="Phone2">+380972132415</p>
+            </div>
+            <div class="Contacts">
+                <p id="Mail">info@duikt.edu.ua</p>
+                <p id="Telegram">Телеграм бот</p>
+            </div>
+       </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+﻿body{
+ margin:0px 0px 0px 0px;
+}
+.Head {
+    display:flex;
+    flex-direction:row;
+    margin: 0px;
+    background-color: rgb(61,90,128);
+    
+}
+
+.Footer {
+
+    display:flex;
+    flex-direction:column;
+    margin: 0px;
+  
+    background-color: rgb(61,90,128);
+}
+.Lending {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+.LendingBodyColor {
+    background-color: rgb(152, 193, 217);
+}
+.Logo{
+    margin-top:7px;
+    margin-right:5px;
+    max-height:80px;
+    max-width:80px;
+}
+.HeaderText {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    margin-top: 40px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+}
+.LogoText {
+    width: 14%;
+}
+.Languages {
+    justify-content: right;
+    width: 80%;
+}
+.Info {
+    display: flex;
+    margin-top: 0px;
+}
+.InfoText {
+    font-size: 1.1em;
+    margin-bottom:0px;
+}
+.Phones, .Contacts {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#Phone1::before {
+    content: "🕻";
+    color:rgb(238,108,77);
+}
+#Phone2::before {
+    content: "🕻";
+    color: rgb(238,108,77);
+}
+#Mail::before {
+    content: "🖂 ";
+    color: rgb(238,108,77);
+}
+.Phones p, .Contacts p {
+    font-size: 1.1em;
+}
+#Phone1 {
+    margin: 10px 10px 0px 0px;
+}
+#Mail {
+    margin: 10px 10px 0px 0px;
+}
+.LendingPhoto {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 90%;
+    height: 95%;
+}
+
+.LendingText {
+    display: flex;
+    flex-direction: column;
+    height:100%;
+    width:30%;
+    justify-content :center;
+    color:rgb(61,90,128);
+}
+
+.Btn {
+    background-color: rgb(238,108,77);
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.LendingBtn{
+    
+    width:150px;
+    height:50px;
+   
+}
+.Btn:hover {
+    background-color: aqua;
+    color: black;
+}
+
+.SelectBtn {
+    width: 400px;
+    height: 45px;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+.message {
+    color: #333;
+    margin-bottom: 30px; /* Відступ після тексту "Статус обробки" */
+    font-size: 35px; /* Збільшений розмір тексту "Статус обробки" */
+    font-weight: normal; /* Надання жирності тексту "Статус обробки" */
+}
+
+.notification {
+    font-size: 36px;
+    color: #3D5A80; /* Змінений колір тексту */
+}
+
+.contact-info {
+    font-size: 30px;
+    color: #3D5A80; /* Змінений колір тексту */
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.ReferenceForm {
+    margin: 39px 128px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.ReferenceFormLabel {
+    font-size: 22px;
+}
+
+.ReferenceFormLabel, .ReferenceFormInput {
+    display: block;
+    padding: 5px;
+    color: rgba(41, 50, 65, 1);
+
+}
+
+.ReferenceFormInput {
+    border: 1px solid ;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    border: 0px;
+    font-size: 12px;
+    width: 400px;
+    height: 40px;
+    border-radius: 13px;
+}
+.formBtn{
+   width:100px;
+}
+#referenceHead {
+    padding-top: 40px;
+    color: rgba(41, 50, 65, 1);
+    text-align: center;
+    font-size: 40px;
+}
+
+.ReviewHead {
+    text-align: center
+}
+.ReviewTextBlock {
+    border: 1px solid;
+    border-color: black;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.hrefBtn {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    height: 10px;
+    padding-top: 10px;
+    padding-bottom: 16px;
+    font-size: medium;
+    border: 2px solid black;
+    text-decoration: none;
+}

@@ -1,0 +1,19 @@
+﻿@model ReferenceRequestInfoVM
+<div class="formContainer">
+    <h1 id="referenceHead">Замовлення довідки:</h1>
+    <form class="ReferenceForm" asp-action="RequestReference" method="post">
+        <input type="hidden" asp-for="@Model.Info.Type" value="@Model.Info.Type" />
+        @await Html.PartialAsync("_StudentInfo", Model)
+
+        <div>
+            <label name="@ReferenceCustomFieldType.YearOfBirth.ToString()" class="ReferenceFormLabel">Дата народження</label>
+            <input type="hidden" asp-for="@Model.Info.CustomFields[0].Type" value="@ReferenceCustomFieldType.YearOfBirth" />
+            <input asp-for="@Model.Info.CustomFields[0].Value" class="ReferenceFormInput" placeholder="Введіть вашу дату народження">
+        </div>
+
+        <div class=" buttons">
+            <a class="Btn formBtn hrefBtn" asp-action="Index">Назад</a>
+            <button type="submit" class="Btn formBtn">Далі</button>
+        </div>
+    </form>
+</div>

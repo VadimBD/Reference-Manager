@@ -1,0 +1,17 @@
+﻿@model ReferenceRequestInfoVM
+<div class="formContainer">
+    <h1 id="referenceHead">Замовлення довідки:</h1>
+
+    <form class="ReferenceForm" asp-action="RequestReference" method="post">
+        <input type="hidden" asp-for="@Model.Info.Type" value="@Model.Info.Type" />
+        @await Html.PartialAsync("_StudentInfo", Model)
+        <div class=".GroupSelect">
+            <label for="group" style=" font-size: 22px;">Виберіть вашу групу</label>
+            <select id="group"  asp-items="Model.GroupsSLI" asp-for="Info.Group.Id"><option value="0"></option></select>
+        </div>
+        <div class=" buttons">
+            <a class="Btn formBtn hrefBtn" asp-action="Index">Назад</a>
+            <button type="submit" class="Btn formBtn">Далі</button>
+        </div>
+    </form>
+</div>
